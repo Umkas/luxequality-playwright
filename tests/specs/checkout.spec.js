@@ -208,7 +208,8 @@ test.describe('Test Case Objective: Checkout', () => {
         await expect(page.locator(inventoryPage.title)).toHaveText('Products');
     });
 
-    test.skip('009 - Checkout without products. Should not allow checkout with empty cart', async ({ page }) => {
+    test('009 - Checkout without products. Should not allow checkout with empty cart', async ({ page }) => {
+        test.skip(true, 'BUG: site intentionally fails this case');
         await expect(page.locator(inventoryPage.title)).toHaveText('Products');
         await expect(page).toHaveURL(/inventory/);
 
