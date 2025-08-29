@@ -27,7 +27,7 @@ The task was to implement **9 test cases** for [saucedemo.com](https://www.sauce
 6. **Products.006** — sorting (A–Z, Z–A, Low–High, High–Low)  
 7. **Footer.007** — social links open in a new browser tab  
 8. **Checkout.008** — successful checkout with order confirmation  
-9. **Cart.009** — checkout with an empty cart (bug discovered)  
+9. **Cart.009** — checkout with an empty cart (bug discovered - due to an intentional bug on the website, test case 009 should fail.)  
 
 ---
 

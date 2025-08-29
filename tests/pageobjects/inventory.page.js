@@ -14,15 +14,6 @@ class InventoryPage extends Page {
     return page.locator(`xpath=//*[@data-test="${dataTest}"]/ancestor::div[contains(@class, "inventory_item")]`);
   }
 
-// async getProductDataByTitleDataTest(page, dataTest) {
-//   const container = this.getProductContainerByItemTitleDataTest(page, dataTest);
-//   await container.waitFor({ state: 'visible' });   
-//   return {
-//     name: await container.locator('.inventory_item_name').textContent(),
-//     price: removeDollarSign(await container.locator('.inventory_item_price').textContent()),
-//     addToCartBtn: container.locator('[data-test^="add-to-cart"]')
-//   };
-// }
 async getProductDataByTitleDataTest(page, dataTest) {
   const container = page.locator(`xpath=//*[@data-test="${dataTest}"]/ancestor::div[contains(@class, "inventory_item")]`);
   return {
