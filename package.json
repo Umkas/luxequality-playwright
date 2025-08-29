@@ -8,8 +8,8 @@
     "test:login": "playwright test tests/specs/login.spec.js",
     "test:products": "playwright test tests/specs/products.spec.js",
     "test:cart": "playwright test tests/specs/cart.spec.js",
-        "test:checkout": "playwright test tests/specs/checkout.spec.js",
-                "test:footer": "playwright test tests/specs/footer.spec.js",
+    "test:checkout": "playwright test tests/specs/checkout.spec.js",
+    "test:footer": "playwright test tests/specs/footer.spec.js",
     "test:ui": "playwright test --ui",
     "report": "playwright show-report"
   },
